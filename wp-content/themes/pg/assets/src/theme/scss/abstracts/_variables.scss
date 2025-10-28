@@ -1,0 +1,204 @@
+/**
+ * Variables
+ */
+
+/**
+ * Rem settings
+ */
+$rem-size: 10px;
+
+/**
+ * Colors
+ */
+
+$white: #fff;
+$black: #000;
+$red: #e11c1f;
+$grey: #BBBDBF;
+$yellow: #F4EA3D;
+$olive: #134020;
+$lavander: #7E2C46;
+
+// $theme-colors map is used in the color utility classes.
+$theme-colors: (
+  'white': $white,
+  'black': $black,
+
+	'red': $red,
+	'yellow': $yellow
+);
+
+$body-color: $white;
+$body-bg: $olive;
+
+/**
+ * Bootstrap variables and settings
+ */
+
+// Settings
+
+$enable-deprecation-messages: false;
+$enable-grid-classes: true;
+
+// Z-index
+
+$zindex-fixed: 1030;
+$zindex-sticky: 1020;
+
+// Grid
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 1024px,
+	xlg: 1500px,
+  xl: 2100px,
+);
+
+$grid-columns: 12;
+$grid-gutter-width: 120px;
+$grid-row-columns: 6;
+
+// Container
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 1024px,
+  xl: 1140px,
+);
+
+// Spacing
+
+$spacer: 1.5rem;
+
+$spacers: (
+  0: 0,
+  1: (
+    $spacer * 1,
+  ),
+  1d5: (
+    $spacer * 1.5,
+  ),
+  2: (
+    $spacer * 2,
+  ),
+  3: (
+    $spacer * 3,
+  ),
+  4: (
+    $spacer * 4,
+  ),
+  5: (
+    $spacer * 5,
+  ),
+  6: (
+    $spacer * 6,
+  ),
+	7: (
+    $spacer * 7,
+  ),
+  8: (
+    $spacer * 8,
+  ),
+	9: (
+    $spacer * 9,
+  ),
+	10: (
+    $spacer * 10,
+  ),
+	11: (
+    $spacer * 11,
+  ),
+	12: (
+    $spacer * 12,
+  ),
+	13: (
+    $spacer * 13,
+  ),
+	14: (
+    $spacer * 14,
+  ),
+  15: (
+    $spacer * 15,
+  ),
+  20: (
+    $spacer * 20,
+  ),
+);
+
+// Sizes
+
+$sizes: (
+  25: 25%,
+  50: 50%,
+  75: 75%,
+  100: 100%,
+  auto: auto,
+);
+
+// Display utility classes
+
+$displays: none, inline, inline-block, block, table, table-row, table-cell, flex,
+  inline-flex;
+
+// Overflow utility classes
+
+$overflows: auto, hidden;
+
+// Position utility classes
+
+$positions: static, relative, absolute, fixed, sticky;
+
+/**
+ * Typography
+ */
+
+$font-family-sans-serif: 'coc', system-ui;
+$font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+  'Liberation Mono', 'Courier New', monospace; // stylelint-disable-line value-keyword-case
+
+$font-family-base: $font-family-sans-serif;
+
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-bold: 700;
+
+$font-size-base: 2.5rem;
+$font-weight-base: $font-weight-regular;
+$line-height-base: 1.2;
+
+$link-color: inherit;
+$link-decoration: none;
+$link-hover-color: inherit;
+$link-hover-decoration: none;
+
+// Font levels.
+
+$type-levels: ();
+
+// Type breakpoint settings.
+
+$type-breakpoint-settings: (
+  xs: (),
+  sm: (),
+  md: (),
+  lg: (),
+  xl: (),
+);
+
+/**
+ * Code
+ */
+
+$code-color: #d63384;
+$pre-color: #666;
+$kbd-color: $white;
+$kbd-bg: $black;
+
+/**
+ * Tables
+ */
+$table-border-width: 0.1rem;
+$table-border-color: $black;

@@ -1,0 +1,44 @@
+/**
+ * Typography
+ */
+
+ @font-face {
+	font-family: 'coc';
+	src: url('/wp-content/themes/pg/assets/fonts/cocon-bold-webfont.woff2') format('woff2'),
+			 url('/wp-content/themes/pg/assets/fonts/cocon-bold-webfont.woff') format('woff');
+	font-weight: 700;
+	font-style: normal;
+
+}
+
+@font-face {
+	font-family: 'coc';
+	src: url('/wp-content/themes/pg/assets/fonts/cocon-light-webfont.woff2') format('woff2'),
+			 url('/wp-content/themes/pg/assets/fonts/cocon-light-webfont.woff') format('woff');
+	font-weight: 300;
+	font-style: normal;
+
+}
+
+@font-face {
+	font-family: 'coc';
+	src: url('/wp-content/themes/pg/assets/fonts/cocon-regular-webfont.woff2') format('woff2'),
+			 url('/wp-content/themes/pg/assets/fonts/cocon-regular-webfont.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+
+}
+
+.title-1 {
+  font-size: 4rem;
+	line-height: calc(45 / 40);
+}
+
+.p-bigger {
+	font-size: 3rem;
+}
+
+.p-smaller {
+	font-size: 2.2rem;
+	font-weight: $font-weight-light;
+}

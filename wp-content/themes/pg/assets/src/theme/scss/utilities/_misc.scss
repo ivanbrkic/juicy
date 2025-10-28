@@ -1,0 +1,68 @@
+.mw-280 {
+	max-width: 28rem;
+}
+.mw-350 {
+	max-width: 35rem;
+}
+
+.mw-555 {
+	max-width: 55.5rem;
+}
+.mw-650 {
+  max-width: 65rem;
+ 
+}
+.mw-870 {
+  max-width: 87rem;
+}
+
+.mw-790 {
+  max-width: 79rem;
+}
+
+.mw-950 {
+	max-width: 95rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.text-left {
+	text-align: left;
+}
+
+.pr {
+  position: relative;
+}
+
+.zi-2 {
+  z-index: 2;
+}
+
+.zi-4 {
+  z-index: 4;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.flex-line {
+	display: flex;
+	gap: $spacer * 2;
+	align-items: center;
+	&.gap-80 {
+		gap: 8rem;
+	}
+}

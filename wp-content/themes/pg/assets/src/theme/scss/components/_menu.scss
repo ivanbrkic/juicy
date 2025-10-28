@@ -1,0 +1,75 @@
+
+
+.main-menu {
+  list-style: none;
+  display: flex;
+  font-size: 23px;
+	line-height: 1;
+  text-transform: uppercase;
+	gap: $spacer * 3;
+  li {
+    a {
+      padding: 0;
+      display: block;
+      &:hover {
+        color: $white;
+      }
+    }
+  }
+  @include media-breakpoint-down(md) {
+    width: 100%;
+    font-size: 20px;
+    padding: $spacer * 2 0;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-image: url(/wp-content/themes/pg/assets/static/img/seamless-red.png);
+    display: flex;
+    flex-direction: column;
+    opacity: 0.1;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    transform: translate(100%, 0);
+    @at-root .is-nav-open & {
+      opacity: 1;
+      transform: translate(0, 0);
+    }
+    li {
+      a {
+        padding: 0 $spacer * 4;
+        text-align: right;
+        display: block;
+      }
+    }
+  }
+}
+
+.menu-toggle {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.3rem;
+  @include media-breakpoint-up(lg) {
+    display: none;
+  }
+  &__stripe {
+    width: 26px;
+    height: 3px;
+    background: white;
+    margin: 3px 0;
+    -webkit-transform-origin: center;
+    -ms-transform-origin: center;
+    transform-origin: center;
+    transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+  }
+  @at-root .is-nav-open &__stripe:nth-child(1) {
+    transform: translate(0, 9px) rotate(45deg);
+  }
+  @at-root .is-nav-open &__stripe:nth-child(2) {
+    opacity: 0;
+  }
+
+  @at-root .is-nav-open &__stripe:nth-child(3) {
+    transform: translate(0, -9px) rotate(-45deg);
+  }
+}

@@ -1,0 +1,20 @@
+/**
+ * Colors
+ */
+
+
+@each $color, $value in $theme-colors {
+  // Text color
+  .text-#{$color} {
+    color: $value !important;
+  }
+
+  // Background color
+  .bg-#{$color} {
+    background-color: $value !important;
+  }
+}
+
+.bg-seamless-red {
+	background-image: url(/wp-content/themes/pg/assets/static/img/seamless-red.png);
+}
