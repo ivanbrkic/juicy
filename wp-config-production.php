@@ -8,9 +8,9 @@
 /**
  * Database configuration.
  */
-define( 'DB_NAME', 'c196db1' ); // The name of the database for WordPress.
-define( 'DB_USER', 'c196u1' ); // MySQL database username.
-define( 'DB_PASSWORD', 'qn2XsPCpfhAS_' ); // MySQL database password.
+define( 'DB_NAME', 'blagdanijuicyhr' ); // The name of the database for WordPress.
+define( 'DB_USER', 'blagdanijuicyhr' ); // MySQL database username.
+define( 'DB_PASSWORD', 'IZz1qfkZFaIkwCr' ); // MySQL database password.
 define( 'DB_HOST', 'localhost' ); // MySQL hostname.
 
 /**
