@@ -6,7 +6,7 @@ import Swiper from 'swiper/bundle';
 // Import Swiper styles
 import 'swiper/swiper-bundle.min.css';
 
-$('.js-pravila').attr('href', '/wp-content/themes/pg/assets/Pravila%20nagradnog%20natječaja%20Ulovi%20Moto%20duuuha.pdf');
+$('.js-pravila').attr('href', '/wp-content/themes/pg/assets/Pravila nagradnog natječaja Zagrij se za blagdane uz Juicy džempere.pdf');
 $('.js-pravila').attr('target', '_blank');
 
 $('.ginput_container_fileupload input').on('change', function() {

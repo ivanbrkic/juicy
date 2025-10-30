@@ -1,21 +1,79 @@
 .hero {
-  position: relative;
-  margin-top: 75px; // header
+	position: relative;
+	margin-top: 75px; // header
+
+	&__cols {
+		position: relative;
+
+		display: flex;
+		align-items: center;
+		gap: $spacer*2;
+	}
+
+	&__col-1 {
+		flex: 1;
+		display: flex;
+		justify-content: flex-end;
+		position: relative;
+		@include media-breakpoint-down(md){
+			display: none;
+		}
+
+	}
+
+	&__col-2 {
+		@include media-breakpoint-up(lg){
+			flex-shrink: 0;
+
+		}
+	}
+
+	&__col-3 {
+		flex: 1;
+		position: relative;
+		@include media-breakpoint-down(md){
+			display: none;
+		}
+	}
 
 
-&__image-1 {
-	z-index: 2;
-	border: 10px solid $white;
-	transform: translateY(11%) rotate(13deg);
-	transform-origin: top right;
-}
-&__image-2 {
-	z-index: 2;
-	border: 10px solid $white;
-	transform: translateY(11%) perspective(1400px) rotateY(-11deg) rotateZ(-10deg) scale(0.9);
-	transform-origin: top left;
+	&__image-1 {
+		z-index: 2;
+		border: 10px solid $white;
+		transform: translateY(11%) rotate(13deg) scale(0.9);
+		transform-origin: top right;
+		@include media-breakpoint-only(lg){
+			width: 150%;
+			min-width: 400px;
+			position: absolute;
+			top: 50%;
+			right: 0;
+			translate: 5% -50%;
+			max-width: none;
+		}
+	}
 
-}
+	&__image-2 {
+		z-index: 2;
+		border: 10px solid $white;
+		transform: translateY(11%) perspective(1400px) rotateY(-11deg) rotateZ(-10deg) scale(0.9);
+		transform-origin: top left;
+		@include media-breakpoint-only(lg){
+			width: 150%;
+			min-width: 400px;
+			position: absolute;
+			top: 50%;
+			left: 0;
+			translate: -5% -50%;
+			max-width: none;
+		}
+	}
+
+	&__image-3 {
+		z-index: 2;
+		border: 10px solid $white;
+		transform: perspective(200px) rotateX(1deg) rotateZ(-2deg) translate(0, -2%);
+	}
 
 	&__header {
 		position: relative;
@@ -23,17 +81,19 @@
 		max-width: 1212px;
 		left: 42%;
 		transform: translate(-50%, 0);
+
 		@include media-breakpoint-up(xl) {
 			left: 50%;
 		}
 	}
-  &__trans {
-    position: absolute;
-    width: 102%;
-    bottom: -1%;
-    left: -1%;
-		
-    max-width: none;
-    z-index: 1 !important;
-  }
+
+	&__trans {
+		position: absolute;
+		width: 102%;
+		bottom: -1%;
+		left: -1%;
+
+		max-width: none;
+		z-index: 1 !important;
+	}
 }

@@ -2,7 +2,7 @@
 	<div class="wrapper d-flex justify-content-between align-items-center">
 		<img class="logo" src="/wp-content/themes/pg/assets/static/img/logo.svg" alt="">
 		<ul class="main-menu">
-			<li><a class="js-scroll" href="#moto">Juicy</a></li>
+			<li><a class="js-scroll" href="#juicy">Juicy</a></li>
 			<!-- <li><a class="js-scroll" href="#nagrade">Nagrade</a></li> -->
 			<li><a class="js-scroll" href="#prijava">Prijava</a></li>
 			<!-- <li><a class="js-scroll" href="#dobitnici">Dobitnici</a></li> -->

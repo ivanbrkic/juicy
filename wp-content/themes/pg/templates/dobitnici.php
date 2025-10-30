@@ -19,9 +19,9 @@ if ( $images->have_posts() ) {
 
 		$image = get_the_post_thumbnail_url( get_the_ID(), 'large' );
 		?>
-		<div class="col-12 col-sm-4 gallery__item">
-			<div class="">
-				<img src="<?php echo esc_url( $image ); ?>" />
+		<div class="col-12 col-md-6 col-lg-4 gallery__item">
+			<div class="d-flex justify-content-center">
+				<img class="" src="<?php echo esc_url( $image ); ?>" />
 			</div>
 		</div>
 		<?php
