@@ -16,8 +16,8 @@ define( 'DB_HOST', 'localhost' ); // MySQL hostname.
 /**
  * Disable WordPress from editing our files.
  */
-define( 'DISALLOW_FILE_EDIT', false ); // File editor.
-define( 'DISALLOW_FILE_MODS', false ); // File modifications.
+define( 'DISALLOW_FILE_EDIT', true ); // File editor.
+define( 'DISALLOW_FILE_MODS', true ); // File modifications.
 
 /**
  * Debug.
